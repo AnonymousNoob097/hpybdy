@@ -35,6 +35,7 @@ function serveStaticAssets(): Plugin {
 
 export default defineConfig(() => {
   return {
+    base: '/hpybody/',
     plugins: [react(), tailwindcss(), serveStaticAssets()],
     resolve: {
       alias: {

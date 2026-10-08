@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Compatibility shim for extensions or executors that override window.fetch
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _origFetch;
+            },
+            set: function(fn) {
+              _origFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // ignore if already defined
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Romantic Birthday Gift Experience</title>
+    <meta name="description" content="A private, mobile-first interactive birthday gift opening experience with romantic modals, animated gift box reveal, and celebratory effects." />
+    <meta property="og:title" content="Romantic Birthday Gift Experience" />
+    <meta property="og:description" content="A private, mobile-first interactive birthday gift opening experience with romantic modals, animated gift box reveal, and celebratory effects." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0612] text-rose-50 antialiased overflow-x-hidden selection:bg-rose-500/30 selection:text-rose-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

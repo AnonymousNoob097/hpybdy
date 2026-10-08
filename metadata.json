@@ -1,0 +1,7 @@
+{
+  "name": "Romantic Birthday Gift Experience",
+  "description": "A private, mobile-first interactive birthday gift opening experience with romantic modals, animated gift box reveal, and celebratory effects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
